@@ -1,0 +1,20 @@
+<form action=" /users" method="post"  accept-charset="UTF-8" >
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <fieldset class="account-info">
+    <label>
+      Username
+      <input type="text" name="username"><br>
+    </label><br>
+    <label>
+      Email
+      <input type="email" name="email"><br>
+    </label><br>
+    <label>
+      Password
+      <input type="password" name="password"><br>
+    </label><br>
+  </fieldset><br>
+  <fieldset class="account-action">
+    <input class="btn" type="submit" name="submit" value="Login"><br>
+  </fieldset><br>
+</form>
