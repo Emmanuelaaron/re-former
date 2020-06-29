@@ -4,5 +4,5 @@ class User < ApplicationRecord
   validates :email, format: { with: /@/ },
                     uniqueness: { case_sensitive: false }
 
-  before_save { email.down_case! }
+  before_save { email.downcase! }
 end
