@@ -1,14 +1,2 @@
-<%= form_for @user do |f| %>
-<p>
-  User name: <%= f.text_field :username %>
-  </p>
-  <p>
-  Email : <%= f.email_field :email %>
-  </p>
-  <p>
-  Password : <%= f.password_field :password%>
-  </p>
-  <p>
-  <%= f.submit "Sign Up"%>
-  </p>
-<% end %>
+<h2> Edit Page<h2>
+<%=render partial:'form'%>
