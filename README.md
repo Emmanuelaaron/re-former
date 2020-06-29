@@ -8,12 +8,12 @@ In this project, is demonstration of use of form-helper in rails
 - Ruby-2.5.1p57
 - Rails 5.2.3
 
-## How to use this scrapper
+## How to use this re-former
 
 1. Make sure you have ruby and rails installed
      Type `ruby --version` and `rails --version` see if you get the version number.
      If you don't have ruby installed use [this](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm) link to know how to install it.
-2. Navigate to the folder and type `install bundle` on the terminal then press enter to install dependencies
+2. Navigate to the folder and type `bundle install` on the terminal then press enter to install dependencies
 3. Run `rails db:migrate` to create your database schema
 4. Type `rails c` to open the console and experiment with models
 5. Press `ctrl d` to leave the console
