@@ -21,3 +21,15 @@
 </form>
 
 -->
+<%= form_tag("/users", method: "post") do %>
+
+  <%= label_tag("username") %>
+  <%= text_field_tag :"user[username]" %><br>
+
+  <%= label_tag("email") %>
+  <%= email_field_tag :"user[email]" %><br>
+  </div>
+  <%= label_tag("password") %>
+  <%= password_field_tag :"user[password]" %><br>
+  <%= submit_tag("SignUp") %>
+<% end %>
