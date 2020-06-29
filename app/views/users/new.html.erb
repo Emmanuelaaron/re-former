@@ -21,7 +21,7 @@
 </form>
 
 -->
-<%= form_tag("/users", method: "post") do %>
+<!--<%= form_tag("/users", method: "post") do %>
 
   <%= label_tag("username") %>
   <%= text_field_tag :"user[username]" %><br>
@@ -32,4 +32,19 @@
   <%= label_tag("password") %>
   <%= password_field_tag :"user[password]" %><br>
   <%= submit_tag("SignUp") %>
+<% end %>    -->
+
+<%= form_for @user do |f| %>
+<p>
+  User name: <%= f.text_field :username %>
+  </p>
+  <p>
+  Email : <%= f.email_field :email %>
+  </p>
+  <p>
+  Password : <%= f.password_field :password%>
+  </p>
+  <p>
+  <%= f.submit "Sign Up"%>
+  </p>
 <% end %>

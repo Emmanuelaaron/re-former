@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  def new; end
-
   def create
     @user = User.new(user_params)
 
@@ -9,6 +7,10 @@ class UsersController < ApplicationController
     else
       render new_user
     end
+  end
+
+  def new
+    @user = User.new
   end
 
   private
