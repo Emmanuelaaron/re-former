@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to new_user_path
     else
-      render new_user_path
+      render :new
     end
   end
 
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to new_user_path
     else
-      render 'new'
+      render :edit
     end
   end
 
